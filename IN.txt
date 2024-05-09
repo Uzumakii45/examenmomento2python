@@ -1,0 +1,18 @@
+Linea 10: En la función mostrar_tabla(), la lista ciclistas no está definida 
+en el ámbito de la función. Debes pasarla como un parámetro.
+
+Linea 24-28: En el bucle while dentro de la función main(), 
+las condiciones para las acciones 'corregir', 'retirar' y 'salir'
+ no están correctamente indentadas. Además, parece que faltan los llamados a las 
+ funciones recibir_datos() y mostrar_tabla() dentro del bucle.
+Linea 30: Al llamar a la función recibir_datos() en la función main(),
+no se está almacenando el resultado en la variable ciclistas.
+Linea 31-39: Las condiciones para las acciones
+ 'corregir', 'retirar' y 'salir' no están correctamente estructuradas dentro del
+  bucle while.
+Para solucionar estos problemas:
+
+En la función mostrar_tabla(), asegúrate de pasar la lista ciclistas como parámetro.
+En la función main(), asegúrate de llamar a las funciones recibir_datos() y mostrar_tabla() dentro del bucle while. Además, asegúrate de que las condiciones para las acciones 'corregir', 'retirar' y 'salir' estén correctamente indentadas y estructuradas.
+Asegúrate de almacenar el resultado de la función recibir_datos() en la variable ciclistas cuando se llama dentro de la función main().
+Aquí te dejo algunas pistas para que realices las correcciones necesarias. Si necesitas más ayuda, ¡no dudes en preguntar!
