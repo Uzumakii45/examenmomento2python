@@ -1,6 +1,6 @@
 def recibir_datos():
     ciclistas = []
-    codigos = []  # Lista para almacenar los códigos ingresados
+    codigos = []  
     print("Introduce los datos de los ciclistas o escribe 'menu' para finalizar la entrada de datos y acceder al menú.")
     while True:
         codigo = input("Ingresa el código del ciclista\n** Ingresa el código para registrar **\n** 'Menu' para mostrar datos **\n** 'Terminar' para finalizar **\n")
@@ -9,7 +9,7 @@ def recibir_datos():
         if codigo.lower() == 'terminar':
             print("Finalizando el programa.")
             return ciclistas
-        if codigo in codigos:  # Verificar si el código ya ha sido ingresado
+        if codigo in codigos:  
             print("Error: El código ya fue ingresado previamente.")
             continue
         nombre = input("Ingresa el nombre del ciclista: ")
@@ -18,7 +18,7 @@ def recibir_datos():
         equipo = input("Ingresa el equipo del ciclista: ")
         tiempo = float(input("Ingresa el tiempo (en minutos) de la última prueba: "))
         ciclistas.append((codigo, nombre, edad, pais, equipo, tiempo))
-        codigos.append(codigo)  # Agregar el código a la lista de códigos
+        codigos.append(codigo)  
     return ciclistas
 
 
@@ -30,7 +30,7 @@ def mostrar_tiempos(ciclistas):
 
 def mostrar_tabla(ciclistas):
     print("Tabla de Posiciones:")
-    for ciclista in sorted(ciclistas, key=lambda x: x[5]):  # Ordena por tiempo
+    for ciclista in sorted(ciclistas, key=lambda x: x[5]):  
         print(f"Código: {ciclista[0]}, Nombre: {ciclista[1]}, Edad: {ciclista[2]}, País: {ciclista[3]}, Equipo: {ciclista[4]}, Tiempo: {ciclista[5]} min")
 
 
